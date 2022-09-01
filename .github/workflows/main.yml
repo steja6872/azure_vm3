@@ -10,8 +10,8 @@ jobs:
     - name: Log in with Azure
       uses: azure/login@v1
       with:
-       creds: ${{ secrets.AZURE_CREDENTIALS }}
+       creds: ${{ secrets.AC }}
       env:
-       creds: ${{ secrets.VIRTUAL_MACHINE }}
-    - name: Azure vm login
+       creds: ${{ secrets.VM }}
+    - name: vm login
       run: az login
