@@ -10,6 +10,8 @@ jobs:
     - name: Log in with Azure
       uses: azure/login@v1
       with:
-       creds: ${{ secrets.VM }}
+       creds: ${{ secrets.AZ }}
       env:
-       creds: ${{ secrets.CLI }}
+       creds: ${{ secrets.VM }}
+       admin-username: sai  
+       admin-password: Miracle@123456
