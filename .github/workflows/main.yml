@@ -13,3 +13,5 @@ jobs:
        creds: ${{ secrets.AZURE_CREDENTIALS }}
       env:
        creds: ${{ secrets.VIRTUAL_MACHINE }}
+    - name: Azure vm login
+      run: az login
