@@ -1,0 +1,14 @@
+on: [push, pull_request]
+
+name: AzureLogin_VM
+
+jobs:
+ build:
+    runs-on: [windows-latest]
+    steps:
+
+    - name: Log in with Azure
+      uses: azure/login@v1
+      with:
+        login_id: ${{ secrets.AZURE_CREDENTIALS }}
+        vm_id: ${{ secrets.VIRTUAL_MACHINE }}
