@@ -13,4 +13,6 @@ jobs:
        creds: ${{ secrets.AZ }}
       env:
        creds: ${{ secrets.VM }}
+       run: vm.yml
+       
        
