@@ -1,0 +1,7 @@
+$schema: https://azuremlschemas.azureedge.net/latest/vmCompute.schema.json 
+name: sai
+type: virtualmachine
+resource_id: /subscriptions/d750e971-e8be-4d70-8032-6c678f6f2a54/resourceGroups/practice/providers/Microsoft.Compute/virtualMachines/sai
+ssh_settings.ssh_port: 22
+  admin_username: sai
+  admin_password: Miracle@123456
