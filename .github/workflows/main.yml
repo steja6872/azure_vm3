@@ -11,4 +11,5 @@ jobs:
       uses: azure/login@v1
       with:
        creds: ${{ secrets.AZURE_CREDENTIALS }}
-       environment: ${{ secrets.VIRTUAL_MACHINE }}
+      env:
+       creds: ${{ secrets.VIRTUAL_MACHINE }}
